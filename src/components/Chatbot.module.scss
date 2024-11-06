@@ -1,0 +1,105 @@
+// src/components/Chatbot.module.scss
+.chatbot-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 600px;
+    height: 80vh;
+    margin: 5vh auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    background-color: #343541;
+    color: #eaeaea;
+  
+    .chatbot-header {
+      padding: 10px;
+      font-size: 1.2rem;
+      text-align: center;
+      background-color: #444654;
+      color: #eaeaea;
+      border-bottom: 1px solid #2e2f33;
+    }
+  
+    .chat-window {
+      flex-grow: 1;
+      padding: 20px;
+      overflow-y: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .input-area {
+      display: flex;
+      padding: 10px;
+      background-color: #444654;
+      border-top: 1px solid #2e2f33;
+  
+      input[type='text'] {
+        flex: 1;
+        padding: 12px;
+        border: none;
+        border-radius: 6px;
+        background-color: #2e2f33;
+        color: #eaeaea;
+        font-size: 1rem;
+        outline: none;
+      }
+  
+      button {
+        padding: 12px 20px;
+        margin-left: 10px;
+        background-color: #10a37f;
+        color: white;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        font-size: 1rem;
+  
+        &:hover {
+          background-color: #13b391;
+        }
+      }
+    }
+  }
+
+  .typing-indicator {
+    font-size: 1.2rem;
+    color: #eaeaea;
+    padding: 10px 0;
+    display: flex;
+    gap: 3px;
+    animation: typing 1s infinite;
+  
+    &::after {
+      content: '';
+      display: inline-block;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background-color: #eaeaea;
+      animation: blink 1s infinite alternate;
+    }
+  }
+  
+  @keyframes typing {
+    0% {
+      content: '.';
+    }
+    33% {
+      content: '..';
+    }
+    66% {
+      content: '...';
+    }
+  }
+  
+  @keyframes blink {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0.3;
+    }
+  }
+  
