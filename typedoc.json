@@ -1,0 +1,9 @@
+// typedoc.json
+{
+    "entryPoints": ["src"],
+    "out": "docs",
+    "includeVersion": true,
+    "excludeExternals": true,
+    "tsconfig": "./tsconfig.json"
+  }
+  

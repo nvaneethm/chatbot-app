@@ -1,0 +1,109 @@
+<!DOCTYPE html><html class="default" lang="en"><head><meta charset="utf-8"/><meta http-equiv="x-ua-compatible" content="IE=edge"/><title>chatbot-app - v0.1.0</title><meta name="description" content="Documentation for chatbot-app"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="assets/style.css"/><link rel="stylesheet" href="assets/highlight.css"/><script defer src="assets/main.js"></script><script async src="assets/icons.js" id="tsd-icons-script"></script><script async src="assets/search.js" id="tsd-search-script"></script><script async src="assets/navigation.js" id="tsd-nav-script"></script></head><body><script>document.documentElement.dataset.theme = localStorage.getItem("tsd-theme") || "os";document.body.style.display="none";setTimeout(() => app?app.showPage():document.body.style.removeProperty("display"),500)</script><header class="tsd-page-toolbar"><div class="tsd-toolbar-contents container"><div class="table-cell" id="tsd-search" data-base="."><div class="field"><label for="tsd-search-field" class="tsd-widget tsd-toolbar-icon search no-caption"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><use href="assets/icons.svg#icon-search"></use></svg></label><input type="text" id="tsd-search-field" aria-label="Search"/></div><div class="field"><div id="tsd-toolbar-links"></div></div><ul class="results"><li class="state loading">Preparing search index...</li><li class="state failure">The search index is not available</li></ul><a href="index.html" class="title">chatbot-app - v0.1.0</a></div><div class="table-cell" id="tsd-widgets"><a href="#" class="tsd-widget tsd-toolbar-icon menu no-caption" data-toggle="menu" aria-label="Menu"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><use href="assets/icons.svg#icon-menu"></use></svg></a></div></div></header><div class="container container-main"><div class="col-content"><div class="tsd-page-title"><h1>chatbot-app - v0.1.0</h1></div><div class="tsd-panel tsd-typography"><a id="md:chatbot-app" class="tsd-anchor"></a><h1 class="tsd-anchor-link">Chatbot App<a href="#md:chatbot-app" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="assets/icons.svg#icon-anchor"></use></svg></a></h1><p>A simple chatbot app built with React and TypeScript that allows users to communicate with a backend service, which processes user queries. This project includes a clean architecture setup, SCSS modules for styling, and JSDoc documentation for maintainability and readability.</p>
+<a id="md:table-of-contents" class="tsd-anchor"></a><h2 class="tsd-anchor-link">Table of Contents<a href="#md:table-of-contents" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="assets/icons.svg#icon-anchor"></use></svg></a></h2><ul>
+<li><a href="#md:overview">Overview</a></li>
+<li><a href="#md:features">Features</a></li>
+<li><a href="#md:installation">Installation</a></li>
+<li><a href="#md:folder-structure">Folder Structure</a></li>
+<li><a href="#md:usage">Usage</a></li>
+<li><a href="#md:configuration">Configuration</a></li>
+<li><a href="#md:jsdoc-documentation">JSDoc Documentation</a></li>
+<li><a href="#md:adding-loading-animation">Adding Loading Animation</a></li>
+<li><a href="#md:api-service">API Service</a></li>
+<li><a href="#md:technologies-used">Technologies Used</a></li>
+</ul>
+<a id="md:overview" class="tsd-anchor"></a><h2 class="tsd-anchor-link">Overview<a href="#md:overview" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="assets/icons.svg#icon-anchor"></use></svg></a></h2><p>This project demonstrates a chatbot interface that sends user messages to a backend API and displays responses. It follows a clean architecture pattern and uses SCSS modules with dot notation for scoped styling. The app includes a typing indicator to show when the chatbot is processing a query.</p>
+<a id="md:features" class="tsd-anchor"></a><h2 class="tsd-anchor-link">Features<a href="#md:features" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="assets/icons.svg#icon-anchor"></use></svg></a></h2><ul>
+<li><strong>React with TypeScript</strong>: Strongly typed and maintainable.</li>
+<li><strong>Clean Architecture</strong>: Clear separation of concerns, including components, services, types, and utilities.</li>
+<li><strong>SCSS Modules</strong>: Styled using SCSS modules with dot notation for cleaner, scoped styling.</li>
+<li><strong>Typing Indicator</strong>: Minimal animation while waiting for responses from the backend.</li>
+<li><strong>JSDoc Comments</strong>: Well-documented code using JSDoc for improved readability and maintainability.</li>
+<li><strong><code>typedoc</code> Documentation Generation</strong>: Automatically generate documentation using TypeScript’s <code>typedoc</code>.</li>
+</ul>
+<a id="md:installation" class="tsd-anchor"></a><h2 class="tsd-anchor-link">Installation<a href="#md:installation" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="assets/icons.svg#icon-anchor"></use></svg></a></h2><ol>
+<li>
+<p><strong>Clone the repository</strong>:</p>
+<pre><code class="bash"><span class="hl-0">git</span><span class="hl-1"> </span><span class="hl-2">clone</span><span class="hl-1"> </span><br/><span class="hl-0">cd</span><span class="hl-1"> </span><span class="hl-2">chatbot-app</span>
+</code><button type="button">Copy</button></pre>
+
+</li>
+<li>
+<p><strong>Install dependencies</strong>:</p>
+<pre><code class="bash"><span class="hl-0">npm</span><span class="hl-1"> </span><span class="hl-2">install</span>
+</code><button type="button">Copy</button></pre>
+
+</li>
+<li>
+<p><strong>Install additional dependencies for SCSS and typedoc</strong>:</p>
+<pre><code class="bash"><span class="hl-0">npm</span><span class="hl-1"> </span><span class="hl-2">install</span><span class="hl-1"> </span><span class="hl-2">sass</span><span class="hl-1"> </span><span class="hl-2">typedoc</span><span class="hl-1"> </span><span class="hl-3">--save-dev</span>
+</code><button type="button">Copy</button></pre>
+
+</li>
+<li>
+<p><strong>Start the development server</strong>:</p>
+<pre><code class="bash"><span class="hl-0">npm</span><span class="hl-1"> </span><span class="hl-2">start</span>
+</code><button type="button">Copy</button></pre>
+
+</li>
+</ol>
+<p>The app should now be running on <code>http://localhost:3000</code>.</p>
+<a id="md:folder-structure" class="tsd-anchor"></a><h2 class="tsd-anchor-link">Folder Structure<a href="#md:folder-structure" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="assets/icons.svg#icon-anchor"></use></svg></a></h2><pre><code class="plaintext">src/
+├── components/             # Reusable UI components
+│   ├── Chatbot.tsx         # Main Chatbot UI component
+│   ├── Message.tsx         # Message component for individual messages
+│   ├── Chatbot.module.scss # Styles for Chatbot component
+│   ├── Message.module.scss # Styles for Message component
+├── services/               # Services for API calls
+│   └── chatbotService.ts   # Handles API requests to backend
+├── types/                  # Type definitions
+│   └── Message.ts          # Type definition for message objects
+├── utils/                  # Utility functions and helpers
+│   └── api.ts              # Utility to configure axios or fetch API
+└── App.tsx                 # Main app entry point
+└── App.module.scss         # Styles for App component
+</code><button type="button">Copy</button></pre>
+
+<a id="md:usage" class="tsd-anchor"></a><h2 class="tsd-anchor-link">Usage<a href="#md:usage" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="assets/icons.svg#icon-anchor"></use></svg></a></h2><a id="md:typing-indicator" class="tsd-anchor"></a><h3 class="tsd-anchor-link">Typing Indicator<a href="#md:typing-indicator" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="assets/icons.svg#icon-anchor"></use></svg></a></h3><p>A loading animation appears as three dots at the bottom of the chat window to indicate that the chatbot is processing the user query. This feature uses a simple SCSS animation in <code>Chatbot.module.scss</code>.</p>
+<a id="md:jsdoc-documentation" class="tsd-anchor"></a><h3 class="tsd-anchor-link">JSDoc Documentation<a href="#md:jsdoc-documentation" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="assets/icons.svg#icon-anchor"></use></svg></a></h3><p>JSDoc comments are used throughout the project for all components, functions, and types. This allows for easy documentation generation using <code>typedoc</code>.</p>
+<p>To generate the documentation:</p>
+<pre><code class="bash"><span class="hl-0">npx</span><span class="hl-1"> </span><span class="hl-2">typedoc</span>
+</code><button type="button">Copy</button></pre>
+
+<p>Documentation will be generated in the <code>docs/</code> directory, which can be opened with a browser.</p>
+<a id="md:configuration" class="tsd-anchor"></a><h2 class="tsd-anchor-link">Configuration<a href="#md:configuration" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="assets/icons.svg#icon-anchor"></use></svg></a></h2><p>The backend URL is currently hardcoded in the service file (<code>chatbotService.ts</code>). You can adjust the base URL or configure environment variables as needed.</p>
+<p>To enable CORS in development, configure the backend to accept requests from <code>http://localhost:3000</code></p>
+<a id="md:adding-loading-animation" class="tsd-anchor"></a><h2 class="tsd-anchor-link">Adding Loading Animation<a href="#md:adding-loading-animation" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="assets/icons.svg#icon-anchor"></use></svg></a></h2><p>A &quot;typing&quot; indicator is shown while waiting for the response from the backend. Here’s the relevant code:</p>
+<p>In <code>Chatbot.tsx</code>, add a loading state and display an indicator while waiting for the bot's response:</p>
+<pre><code class="typescript"><span class="hl-3">const</span><span class="hl-1"> [</span><span class="hl-4">loading</span><span class="hl-1">, </span><span class="hl-4">setLoading</span><span class="hl-1">] = </span><span class="hl-0">useState</span><span class="hl-1">(</span><span class="hl-3">false</span><span class="hl-1">);</span><br/><br/><span class="hl-1">{</span><span class="hl-5">loading</span><span class="hl-1"> &amp;&amp; &lt;</span><span class="hl-6">div</span><span class="hl-1"> </span><span class="hl-6">className</span><span class="hl-1">={</span><span class="hl-6">styles</span><span class="hl-1">[</span><span class="hl-2">&#39;typing-indicator&#39;</span><span class="hl-1">]}&gt;...&lt;/</span><span class="hl-5">div</span><span class="hl-1">&gt;}</span>
+</code><button type="button">Copy</button></pre>
+
+<p>In <code>Chatbot.module.scss</code>:</p>
+<pre><code class="scss">.typing-indicator {
+  font-size: 1.2rem;
+  color: #eaeaea;
+  padding: 10px 0;
+  animation: typing 1s infinite;
+}
+
+@keyframes typing {
+  0%, 33% { content: '.'; }
+  66% { content: '..'; }
+  100% { content: '...'; }
+}
+</code><button type="button">Copy</button></pre>
+
+<a id="md:api-service" class="tsd-anchor"></a><h2 class="tsd-anchor-link">API Service<a href="#md:api-service" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="assets/icons.svg#icon-anchor"></use></svg></a></h2><p>The service file (<code>chatbotService.ts</code>) handles API requests to the backend and is responsible for sending user queries and handling responses. This file uses <code>axios</code> for HTTP requests.</p>
+<p>Example usage:</p>
+<pre><code class="typescript"><span class="hl-7">import</span><span class="hl-1"> </span><span class="hl-5">axios</span><span class="hl-1"> </span><span class="hl-7">from</span><span class="hl-1"> </span><span class="hl-2">&#39;axios&#39;</span><span class="hl-1">;</span><br/><br/><span class="hl-7">export</span><span class="hl-1"> </span><span class="hl-3">const</span><span class="hl-1"> </span><span class="hl-0">sendMessageToBackend</span><span class="hl-1"> = </span><span class="hl-3">async</span><span class="hl-1"> (</span><span class="hl-5">userQuery</span><span class="hl-1">: </span><span class="hl-6">string</span><span class="hl-1">) </span><span class="hl-3">=&gt;</span><span class="hl-1"> {</span><br/><span class="hl-1">  </span><span class="hl-7">try</span><span class="hl-1"> {</span><br/><span class="hl-1">    </span><span class="hl-3">const</span><span class="hl-1"> </span><span class="hl-4">response</span><span class="hl-1"> = </span><span class="hl-7">await</span><span class="hl-1"> </span><span class="hl-5">axios</span><span class="hl-1">.</span><span class="hl-0">post</span><span class="hl-1">(</span><span class="hl-2">&#39;http://127.0.0.1:8000/query/&#39;</span><span class="hl-1">, {</span><br/><span class="hl-1">      </span><span class="hl-5">user_query:</span><span class="hl-1"> </span><span class="hl-5">userQuery</span><span class="hl-1">,</span><br/><span class="hl-1">    });</span><br/><span class="hl-1">    </span><span class="hl-7">return</span><span class="hl-1"> </span><span class="hl-5">response</span><span class="hl-1">.</span><span class="hl-5">data</span><span class="hl-1">.</span><span class="hl-5">response</span><span class="hl-1">;</span><br/><span class="hl-1">  } </span><span class="hl-7">catch</span><span class="hl-1"> (</span><span class="hl-5">error</span><span class="hl-1">) {</span><br/><span class="hl-1">    </span><span class="hl-5">console</span><span class="hl-1">.</span><span class="hl-0">error</span><span class="hl-1">(</span><span class="hl-2">&#39;Error sending message to backend:&#39;</span><span class="hl-1">, </span><span class="hl-5">error</span><span class="hl-1">);</span><br/><span class="hl-1">    </span><span class="hl-7">return</span><span class="hl-1"> </span><span class="hl-2">&#39;Sorry, there was an error processing your request.&#39;</span><span class="hl-1">;</span><br/><span class="hl-1">  }</span><br/><span class="hl-1">};</span>
+</code><button type="button">Copy</button></pre>
+
+<a id="md:technologies-used" class="tsd-anchor"></a><h2 class="tsd-anchor-link">Technologies Used<a href="#md:technologies-used" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="assets/icons.svg#icon-anchor"></use></svg></a></h2><ul>
+<li><strong>React</strong> with <strong>TypeScript</strong> for building the app.</li>
+<li><strong>SCSS Modules</strong> for component-level styling.</li>
+<li><strong>Axios</strong> for HTTP requests.</li>
+<li><strong>typedoc</strong> for documentation generation.</li>
+<li><strong>JSDoc</strong> comments for code documentation.</li>
+<li><strong>Clean Architecture</strong> principles to separate concerns and improve maintainability.</li>
+</ul>
+<a id="md:license" class="tsd-anchor"></a><h2 class="tsd-anchor-link">License<a href="#md:license" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="assets/icons.svg#icon-anchor"></use></svg></a></h2><p>This project is open source and available under the MIT License.</p>
+</div></div><div class="col-sidebar"><div class="page-menu"><div class="tsd-navigation settings"><details class="tsd-accordion"><summary class="tsd-accordion-summary"><h3><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><use href="assets/icons.svg#icon-chevronDown"></use></svg>Settings</h3></summary><div class="tsd-accordion-details"><div class="tsd-filter-visibility"><span class="settings-label">Member Visibility</span><ul id="tsd-filter-options"><li class="tsd-filter-item"><label class="tsd-filter-input"><input type="checkbox" id="tsd-filter-protected" name="protected"/><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><rect class="tsd-checkbox-background" width="30" height="30" x="1" y="1" rx="6" fill="none"></rect><path class="tsd-checkbox-checkmark" d="M8.35422 16.8214L13.2143 21.75L24.6458 10.25" stroke="none" stroke-width="3.5" stroke-linejoin="round" fill="none"></path></svg><span>Protected</span></label></li><li class="tsd-filter-item"><label class="tsd-filter-input"><input type="checkbox" id="tsd-filter-inherited" name="inherited" checked/><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><rect class="tsd-checkbox-background" width="30" height="30" x="1" y="1" rx="6" fill="none"></rect><path class="tsd-checkbox-checkmark" d="M8.35422 16.8214L13.2143 21.75L24.6458 10.25" stroke="none" stroke-width="3.5" stroke-linejoin="round" fill="none"></path></svg><span>Inherited</span></label></li></ul></div><div class="tsd-theme-toggle"><label class="settings-label" for="tsd-theme">Theme</label><select id="tsd-theme"><option value="os">OS</option><option value="light">Light</option><option value="dark">Dark</option></select></div></div></details></div><details open class="tsd-accordion tsd-page-navigation"><summary class="tsd-accordion-summary"><h3><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><use href="assets/icons.svg#icon-chevronDown"></use></svg>On This Page</h3></summary><div class="tsd-accordion-details"><a href="#md:chatbot-app"><span>Chatbot <wbr/>App</span></a><ul><li><a href="#md:table-of-contents"><span>Table of <wbr/>Contents</span></a></li><li><a href="#md:overview"><span>Overview</span></a></li><li><a href="#md:features"><span>Features</span></a></li><li><a href="#md:installation"><span>Installation</span></a></li><li><a href="#md:folder-structure"><span>Folder <wbr/>Structure</span></a></li><li><a href="#md:usage"><span>Usage</span></a></li><li><ul><li><a href="#md:typing-indicator"><span>Typing <wbr/>Indicator</span></a></li><li><a href="#md:jsdoc-documentation"><span>JSDoc <wbr/>Documentation</span></a></li></ul></li><li><a href="#md:configuration"><span>Configuration</span></a></li><li><a href="#md:adding-loading-animation"><span>Adding <wbr/>Loading <wbr/>Animation</span></a></li><li><a href="#md:api-service"><span>API <wbr/>Service</span></a></li><li><a href="#md:technologies-used"><span>Technologies <wbr/>Used</span></a></li><li><a href="#md:license"><span>License</span></a></li></ul></div></details></div><div class="site-menu"><nav class="tsd-navigation"><a href="modules.html" class="current"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="assets/icons.svg#icon-1"></use></svg><span>chatbot-app - v0.1.0</span></a><ul class="tsd-small-nested-navigation" id="tsd-nav-container" data-base="."><li>Loading...</li></ul></nav></div></div></div><footer><p class="tsd-generator">Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p></footer><div class="overlay"></div></body></html>
